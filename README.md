@@ -1,1 +1,25 @@
-# testa
+Analysis Overview
+The following analysis is based on data provided from the year 2022, assuming that I was hired in 2023. Given the large dataset, I used sampling techniques by taking 100 samples from each csv file using Pandas for analysis. The insights gained from this sample set offer valuable perspectives on trends in bike usage, user behavior, and station performance.
+Month-to-Month Analysis
+When examining the data month-by-month, it is clear that member users predominantly use bikes from April to October, which correlates with favorable weather conditions. This is an expected outcome, as outdoor activities like cycling increase during warmer months. In contrast, casual users maintain a steady usage pattern throughout the year, with a slight uptick between May and October. Both spring and summer seasons see growth in bike usage for both members and casual users, reinforcing the idea that weather has a direct impact on cycling activity.
+Hourly Usage Patterns
+The analysis of hourly usage patterns highlights a distinct variation in peak hours based on seasons:
+During spring and summer, the busiest hours for bike usage are 8 AM and 6 PM, likely corresponding to typical commuting times.
+In fall and winter, the peak hours shift slightly to 8 AM and 5 PM, which may be attributed to earlier sunsets and possibly colder evening temperatures that discourage late rides.
+This data supports the assumption that many users, particularly commuters, use the bikes for transportation to and from work or public transport hubs during these times.
+Station Performance
+A bar chart was created to show the top and bottom performing stations, with filters included for ease of interpretation. This visualization is quite self-explanatory, allowing users to quickly identify high-traffic stations and those that underperform. This data can be crucial for resource allocation, such as determining which stations need more bikes or require more frequent maintenance.
+Duration by User Type
+The ride duration varies significantly between members and casual users. Members are using the bikes more than twice as much as casual users. This might suggest that members view the bike service as a more integrated part of their daily routine, possibly for commuting, whereas casual users may be using it more for short-term leisure or tourism purposes.
+Usage by Cycle Type
+In the analysis of cycle types, the data shows that normal bikes are used twice as much as electric bikes. However, a deeper dive into the data reveals that the choice of bike type is influenced by the season. The weather seems to play a role in whether a user opts for a standard or electric bike, possibly because electric bikes may be more appealing during cold weather conditions.
+Overall Bike Usage by Weather
+The Overall Bike Usage by Weather sheet clearly shows that summer is the peak season for bike usage, followed by fall, spring, and finally winter. This trend is in line with the earlier findings that correlate bike usage with favorable weather conditions, confirming that summer provides the optimal environment for cycling, both for members and casual users.
+Top and Bottom Performing Stations with Postal Codes
+A more detailed analysis of top and bottom performing stations is provided, with postal codes included for geographic reference. This offers more granular insights into the performance of specific locations and may aid in identifying areas for expansion or service improvement.
+Inspection Priority Analysis
+One critical point of discussion is the method for determining inspection priority. Initially, the data analysis was based on ride IDs. However, upon closer inspection, I argue that bike IDs should be used instead to prioritize inspections. My reasoning is based on the observation that the count of ride IDs and distinctive ride IDs are the same, suggesting that the same bike was never reused in the data. This anomaly implies that the current data is insufficient to assess whether a bike needs maintenance or inspection based solely on ride IDs.
+Through predictive calculations, I was able to identify the most used ride ID and top-used stations and conclude that bikes stationed at these high-traffic locations should be prioritized for inspection. However, I emphasize that additional data—such as detailed bike usage history—would be necessary to make accurate judgments on bike inspection needs.
+Conclusion
+This analysis offers several key takeaways regarding user behavior, station performance, and inspection priorities. While seasonality plays a clear role in bike usage, both for members and casual users, other factors such as hourly commuting patterns and bike type preferences also emerge as important insights. The top-performing stations and average duration of usage suggest opportunities to optimize bike allocation and infrastructure.
+Regarding bike inspections, the current data on ride IDs may not be sufficient to make fully informed decisions, and further exploration of bike-specific data is recommended. The insights drawn from this analysis provide actionable information that can help enhance operational efficiency and improve user experience in the upcoming years.
